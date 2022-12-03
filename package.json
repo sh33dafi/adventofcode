@@ -1,0 +1,21 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "type":"module",
+  "scripts": {
+      "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh33dafi/adventofcode.git"
+  },
+  "author": "Yannick Houbrix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh33dafi/adventofcode/issues"
+  },
+  "homepage": "https://github.com/sh33dafi/adventofcode#readme"
+}
