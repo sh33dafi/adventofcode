@@ -42,12 +42,6 @@ export const solution2 = (segmentAssignments) => {
         .length
 }
 
-export default (input) => {
-    const data = fileToArrayNoEmptyLines(input);
-    console.time('solution1');
-    console.log(solution1(data));
-    console.timeEnd('solution1')
-    console.time('solution2');
-    console.log(solution2(data));
-    console.timeEnd('solution2')
+export const prepareInput = (input) => {
+    return fileToArrayNoEmptyLines(input);
 }
