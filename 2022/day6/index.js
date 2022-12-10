@@ -2,7 +2,7 @@ import {readFile} from "../../input-reader.js";
 
 
 export const isValidMarker = (marker) => {
-    let valid = Object.values(marker.reduce((acc, v) => {
+    return Object.values(marker.reduce((acc, v) => {
         if (acc[v]) {
             acc[v]++
         } else {
@@ -10,7 +10,6 @@ export const isValidMarker = (marker) => {
         }
         return acc;
         }, {})).every(v => v === 1)
-    return valid;
 }
 
 export const getMarkerIndex = (datastream, ml = 4) => {
