@@ -10,6 +10,8 @@ export const fileToArrayTrimEnd = (path) => {
     return data.split('\n');
 };
 
+export const readFile = (path) => readFileSync(path, 'utf8').trim();
+
 export const fileToArray = (path) => {
     const data = readFileSync(path, 'utf8').trim();
     return data.split('\n');
